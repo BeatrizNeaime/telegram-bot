@@ -22,7 +22,7 @@ class TelegramController {
       res.status(200).json({ success: true, message: 'Mensagem enviada com sucesso!' });
     } catch (error) {
       console.error(error);
-      res.status(500).json({ success: false, message: 'Erro ao enviar a mensagem. ' + error });
+      res.status(500).json({ success: false, message: 'Erro ao enviar a mensagem. ' });
     }
   }
 }
